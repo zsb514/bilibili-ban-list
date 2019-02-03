@@ -4,10 +4,11 @@
   <item enabled="true">r=.{50}</item> <!-- 超长弹幕 -->
   <item enabled="true">r=^[\.。,，\/\?？!！~～@\^、+=\-_ ]+$</item> <!-- 无意义符号 -->
   <item enabled="true">r=^[^\u4E00-\u9FA5]$</item> <!-- 单个非中文字符 -->
+  <item enabled="true">r=^\d+$</item> <!-- 纯数字 -->
 
   <!-- 建筑美 -->
   <item enabled="true">r=弹\s*[屏幕][^护]*$</item> <!-- 弹幕墙、弹幕测试…… 防止误伤弹幕护体 -->
-  <item enabled="true">t=倍速</item>
+  <!-- <item enabled="true">t=倍速</item> -->
   <item enabled="true">r=[3３三立]\s+[dDＤ体體]</item> <!-- 立  体  弹  幕 -->
   <item enabled="true">r=(^|是)..[红橙黄绿青蓝紫黑白灰].{0,2}$</item> <!-- 颜色 -->
   
@@ -59,5 +60,12 @@
   <item enabled="true">r=\d\d(\d\d)?([\.,。，、\/\-年—*]|\s+)\d(\d)?([\.,。，、\/\-月—*]|\s+)\d</item> <!-- 2000.1.11路过 -->
   <item enabled="true">r=^(2([^3]\d|3[^3])|6([^6]\d|6[^6])|[^26]\d{2})\d{0,5}$</item> <!-- ^(?!233|666)\d{3,8}$，屏蔽20160101 -->
   <item enabled="true">r=(元旦|年|国庆|春|秋|圣诞).?快乐</item>
+
+  <!--我的屏蔽-->
+  <item enabled="true">r=^哦呼$</item>
+  <item enabled="true">r=/.*铁骨铮铮.*/</item>
+  <item enabled="true">r=敬礼[.,!]*</item>
+  <item enabled="true">r=/(\d+|[一二三四五六七八九十百千]+)(分钟|小时)前/</item>
+  <item enabled="true">r=^(火[前钳钱][留刘][明名][^\u4e00-\u9fa5]*)+$</item>
   
 </filters>
